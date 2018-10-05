@@ -1,0 +1,1533 @@
+2018-10-03 14:06:50 [127.0.0.1][1][v0tfl3e3hsdr4o97v9sie5h8h5][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\ActionColumn::tempalte' in D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\BaseObject.php:163
+Stack trace:
+#0 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\BaseYii.php(546): yii\base\BaseObject->__set('tempalte', '{update} {delet...')
+#1 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\grid\ActionColumn), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\grid\\Action...', Array, Array)
+#5 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\grid\\Action...', Array, Array)
+#6 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\grid\GridView.php(547): yii\BaseYii::createObject(Array)
+#7 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\grid\GridView.php(283): yii\grid\GridView->initColumns()
+#8 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\grid\GridView->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#11 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#14 D:\OpenServer\domains\testzadanie\advanced\backend\views\products\index.php(40): yii\base\Widget::widget(Array)
+#15 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(336): require('D:\\OpenServer\\d...')
+#16 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#17 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(backend\controllers\ProductsController))
+#18 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ProductsController))
+#19 D:\OpenServer\domains\testzadanie\advanced\backend\controllers\ProductsController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\ProductsController->actionIndex()
+#21 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#24 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('products/index', Array)
+#25 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 D:\OpenServer\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+2018-10-03 14:06:49 [127.0.0.1][1][v0tfl3e3hsdr4o97v9sie5h8h5][info][application] $_GET = [
+    'r' => 'products/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_csrf-frontend' => 'e2cf17aa2460d49f8dd0b36c62564d5de1e35d71dadf01aa47cfdfc0edfe8722a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"owKzPKTy4Q4dOd0pN03Mah-jBFc4OqLq\";}'
+    'advanced-backend' => 'v0tfl3e3hsdr4o97v9sie5h8h5'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _csrf-frontend=e2cf17aa2460d49f8dd0b36c62564d5de1e35d71dadf01aa47cfdfc0edfe8722a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22owKzPKTy4Q4dOd0pN03Mah-jBFc4OqLq%22%3B%7D; advanced-backend=v0tfl3e3hsdr4o97v9sie5h8h5; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '4499'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=products%2Findex'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=products%2Findex'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538564809.937
+    'REQUEST_TIME' => 1538564809
+    'argv' => [
+        0 => 'r=products%2Findex'
+    ]
+    'argc' => 1
+]
+2018-10-03 14:23:07 [127.0.0.1][1][v0tfl3e3hsdr4o97v9sie5h8h5][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\grid\ActionColumn::add_price' in D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\BaseObject.php:163
+Stack trace:
+#0 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\BaseYii.php(546): yii\base\BaseObject->__set('add_price', Object(Closure))
+#1 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\grid\ActionColumn), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\grid\\Action...', Array, Array)
+#5 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\grid\\Action...', Array, Array)
+#6 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\grid\GridView.php(547): yii\BaseYii::createObject(Array)
+#7 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\grid\GridView.php(283): yii\grid\GridView->initColumns()
+#8 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\grid\GridView->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#11 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#14 D:\OpenServer\domains\testzadanie\advanced\backend\views\products\index.php(44): yii\base\Widget::widget(Array)
+#15 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(336): require('D:\\OpenServer\\d...')
+#16 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\OpenServer\\d...', Array)
+#17 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('D:\\OpenServer\\d...', Array, Object(backend\controllers\ProductsController))
+#18 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\ProductsController))
+#19 D:\OpenServer\domains\testzadanie\advanced\backend\controllers\ProductsController.php(44): yii\base\Controller->render('index', Array)
+#20 [internal function]: backend\controllers\ProductsController->actionIndex()
+#21 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#24 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('products/index', Array)
+#25 D:\OpenServer\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 D:\OpenServer\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+2018-10-03 14:23:07 [127.0.0.1][1][v0tfl3e3hsdr4o97v9sie5h8h5][info][application] $_GET = [
+    'r' => 'products/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_csrf-frontend' => 'e2cf17aa2460d49f8dd0b36c62564d5de1e35d71dadf01aa47cfdfc0edfe8722a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"owKzPKTy4Q4dOd0pN03Mah-jBFc4OqLq\";}'
+    'advanced-backend' => 'v0tfl3e3hsdr4o97v9sie5h8h5'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/advanced/backend/web/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _csrf-frontend=e2cf17aa2460d49f8dd0b36c62564d5de1e35d71dadf01aa47cfdfc0edfe8722a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22owKzPKTy4Q4dOd0pN03Mah-jBFc4OqLq%22%3B%7D; advanced-backend=v0tfl3e3hsdr4o97v9sie5h8h5; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.4\\ext;d:\\openserver\\modules\\php\\PHP-5.4\\pear;d:\\openserver\\modules\\php\\PHP-5.4\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.4;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.5\\bin;d:\\openserver\\modules\\http\\Apache-2.2\\bin;d:\\openserver\\modules\\http\\Apache-2.2;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Win32)'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '8455'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=products%2Findex'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=products%2Findex'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538565787.048
+    'REQUEST_TIME' => 1538565787
+    'argv' => [
+        0 => 'r=products%2Findex'
+    ]
+    'argc' => 1
+]
+2018-10-03 14:53:28 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][error][Error] Error: Class 'DatePicker' not found in C:\OSPanel\domains\testzadanie\advanced\backend\views\pricedate\_form.php:14
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(336): require()
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', Array)
+#2 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, NULL)
+#3 C:\OSPanel\domains\testzadanie\advanced\backend\views\pricedate\create.php(18): yii\base\View->render('_form', Array)
+#4 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(336): require('C:\\OSPanel\\doma...')
+#5 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', Array)
+#6 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(backend\controllers\PricedateController))
+#7 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\PricedateController))
+#8 C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php(74): yii\base\Controller->render('create', Array)
+#9 [internal function]: backend\controllers\PricedateController->actionCreate()
+#10 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#11 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('pricedate/creat...', Array)
+#14 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#16 {main}
+2018-10-03 14:53:28 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][info][application] $_GET = [
+    'r' => 'pricedate/create'
+    'product' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    'advanced-backend' => 'v0tfl3e3hsdr4o97v9sie5h8h5'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    '_csrf-frontend' => '328621b9eca91be560f6fba447b60e2a5491b90ce9d2ccd4389fa492530a9f3fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"4anR4i9nIZ3_QAINrqWB_ysEFKywBZ2r\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; advanced-backend=v0tfl3e3hsdr4o97v9sie5h8h5; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; _csrf-frontend=328621b9eca91be560f6fba447b60e2a5491b90ce9d2ccd4389fa492530a9f3fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%224anR4i9nIZ3_QAINrqWB_ysEFKywBZ2r%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '14366'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=pricedate%2Fcreate&product=1'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538567608.762
+    'REQUEST_TIME' => 1538567608
+    'argv' => [
+        0 => 'r=pricedate%2Fcreate&product=1'
+    ]
+    'argc' => 1
+]
+2018-10-03 15:40:04 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][error][Error] Error: Class 'backend\controllers\Products' not found in C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php:77
+Stack trace:
+#0 [internal function]: backend\controllers\PricedateController->actionCreate()
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#4 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('pricedate/creat...', Array)
+#5 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-10-03 15:40:04 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][info][application] $_GET = [
+    'r' => 'pricedate/create'
+    'product' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    '_csrf-frontend' => '328621b9eca91be560f6fba447b60e2a5491b90ce9d2ccd4389fa492530a9f3fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"4anR4i9nIZ3_QAINrqWB_ysEFKywBZ2r\";}'
+    'advanced-backend' => 'n5bce56obfbinla8n1sc5fbf2nhooaav'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; _csrf-frontend=328621b9eca91be560f6fba447b60e2a5491b90ce9d2ccd4389fa492530a9f3fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%224anR4i9nIZ3_QAINrqWB_ysEFKywBZ2r%22%3B%7D; advanced-backend=n5bce56obfbinla8n1sc5fbf2nhooaav'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '14696'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=pricedate%2Fcreate&product=1'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538570404.215
+    'REQUEST_TIME' => 1538570404
+    'argv' => [
+        0 => 'r=pricedate%2Fcreate&product=1'
+    ]
+    'argc' => 1
+]
+2018-10-03 15:53:03 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][error][yii\base\InvalidArgumentException] Exception: DateTime::__construct(): Failed to parse time string (Окт 4, 2018) at position 0 (�): Unexpected character in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\i18n\Formatter.php:835
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(835): DateTime->__construct('\xD0\x9E\xD0\xBA\xD1\x82 4, 2018', Object(DateTimeZone))
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(735): yii\i18n\Formatter->normalizeDatetimeValue('\xD0\x9E\xD0\xBA\xD1\x82 4, 2018', true)
+#2 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(629): yii\i18n\Formatter->formatDateTimeValue('\xD0\x9E\xD0\xBA\xD1\x82 4, 2018', 'medium', 'date')
+#3 C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php(86): yii\i18n\Formatter->asDate('\xD0\x9E\xD0\xBA\xD1\x82 4, 2018')
+#4 [internal function]: backend\controllers\PricedateController->actionCreate()
+#5 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#8 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('pricedate/creat...', Array)
+#9 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+
+Next yii\base\InvalidArgumentException: 'Окт 4, 2018' is not a valid date time value: DateTime::__construct(): Failed to parse time string (Окт 4, 2018) at position 0 (�): Unexpected character
+Array
+(
+    [warning_count] => 0
+    [warnings] => Array
+        (
+        )
+
+    [error_count] => 7
+    [errors] => Array
+        (
+            [0] => Unexpected character
+            [1] => Unexpected character
+            [2] => Unexpected character
+            [3] => Unexpected character
+            [4] => Unexpected character
+            [5] => Unexpected character
+            [7] => Unexpected character
+        )
+
+)
+ in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\i18n\Formatter.php:846
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(735): yii\i18n\Formatter->normalizeDatetimeValue('\xD0\x9E\xD0\xBA\xD1\x82 4, 2018', true)
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\i18n\Formatter.php(629): yii\i18n\Formatter->formatDateTimeValue('\xD0\x9E\xD0\xBA\xD1\x82 4, 2018', 'medium', 'date')
+#2 C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php(86): yii\i18n\Formatter->asDate('\xD0\x9E\xD0\xBA\xD1\x82 4, 2018')
+#3 [internal function]: backend\controllers\PricedateController->actionCreate()
+#4 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#7 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('pricedate/creat...', Array)
+#8 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2018-10-03 15:53:03 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][info][application] $_GET = [
+    'r' => 'pricedate/create'
+    'product' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'qrq4AwU2NLo2cQpiMmLOH1mdKi0cff8WXwQnDgGl2Ifh3tF7SF1Q_Rs0YyZlL6FZN8dyeVkMhVwRM01ZUsGL1w=='
+    'PriceDate' => [
+        'date_start' => 'Окт 4, 2018'
+        'date_end' => 'Окт 4, 2018'
+        'price_price_date' => '1'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    '_csrf-frontend' => '328621b9eca91be560f6fba447b60e2a5491b90ce9d2ccd4389fa492530a9f3fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"4anR4i9nIZ3_QAINrqWB_ysEFKywBZ2r\";}'
+    'advanced-backend' => 'n5bce56obfbinla8n1sc5fbf2nhooaav'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '248'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://testzadanie'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://testzadanie/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; _csrf-frontend=328621b9eca91be560f6fba447b60e2a5491b90ce9d2ccd4389fa492530a9f3fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%224anR4i9nIZ3_QAINrqWB_ysEFKywBZ2r%22%3B%7D; advanced-backend=n5bce56obfbinla8n1sc5fbf2nhooaav'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '14764'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=pricedate%2Fcreate&product=1'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538571183.828
+    'REQUEST_TIME' => 1538571183
+    'argv' => [
+        0 => 'r=pricedate%2Fcreate&product=1'
+    ]
+    'argc' => 1
+]
+2018-10-03 16:47:52 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][error][Error] Error: Call to a member function save() on null in C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php:89
+Stack trace:
+#0 [internal function]: backend\controllers\PricedateController->actionCreate()
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#4 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('pricedate/creat...', Array)
+#5 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-10-03 16:47:52 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][info][application] $_GET = [
+    'r' => 'pricedate/create'
+    'product' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'Ai-bNQIYHSzbCkXfcYi-vVcBWDXQ4ePz7d6WlGgK41tJS_JNT3N5a_ZPLJsmxdH7OVsAYZWQmbmj6fzDO26wCw=='
+    'PriceDate' => [
+        'date_start' => '2018-10-02'
+        'date_end' => '2018-10-12'
+        'price_price_date' => '50000'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    'advanced-backend' => 'n5bce56obfbinla8n1sc5fbf2nhooaav'
+    '_csrf-frontend' => '126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://testzadanie'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://testzadanie/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; advanced-backend=n5bce56obfbinla8n1sc5fbf2nhooaav; _csrf-frontend=126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '15482'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=pricedate%2Fcreate&product=1'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538574472.72
+    'REQUEST_TIME' => 1538574472
+    'argv' => [
+        0 => 'r=pricedate%2Fcreate&product=1'
+    ]
+    'argc' => 1
+]
+2018-10-03 16:48:08 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] yii\web\HeadersAlreadySentException: Headers already sent in C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php on line 89. in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2018-10-03 16:48:08 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'pricedate/create'
+    'product' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'Ai-bNQIYHSzbCkXfcYi-vVcBWDXQ4ePz7d6WlGgK41tJS_JNT3N5a_ZPLJsmxdH7OVsAYZWQmbmj6fzDO26wCw=='
+    'PriceDate' => [
+        'date_start' => '2018-10-02'
+        'date_end' => '2018-10-12'
+        'price_price_date' => '50000'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    'advanced-backend' => 'n5bce56obfbinla8n1sc5fbf2nhooaav'
+    '_csrf-frontend' => '126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://testzadanie'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://testzadanie/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; advanced-backend=n5bce56obfbinla8n1sc5fbf2nhooaav; _csrf-frontend=126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '15493'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=pricedate%2Fcreate&product=1'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538574488.576
+    'REQUEST_TIME' => 1538574488
+    'argv' => [
+        0 => 'r=pricedate%2Fcreate&product=1'
+    ]
+    'argc' => 1
+]
+2018-10-03 16:49:48 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] yii\web\HeadersAlreadySentException: Headers already sent in C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php on line 87. in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2018-10-03 16:49:48 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'pricedate/create'
+    'product' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'Ai-bNQIYHSzbCkXfcYi-vVcBWDXQ4ePz7d6WlGgK41tJS_JNT3N5a_ZPLJsmxdH7OVsAYZWQmbmj6fzDO26wCw=='
+    'PriceDate' => [
+        'date_start' => '2018-10-02'
+        'date_end' => '2018-10-12'
+        'price_price_date' => '50000'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    'advanced-backend' => 'n5bce56obfbinla8n1sc5fbf2nhooaav'
+    '_csrf-frontend' => '126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://testzadanie'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://testzadanie/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; advanced-backend=n5bce56obfbinla8n1sc5fbf2nhooaav; _csrf-frontend=126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '15522'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=pricedate%2Fcreate&product=1'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538574588.068
+    'REQUEST_TIME' => 1538574588
+    'argv' => [
+        0 => 'r=pricedate%2Fcreate&product=1'
+    ]
+    'argc' => 1
+]
+2018-10-03 16:50:01 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] yii\web\HeadersAlreadySentException: Headers already sent in C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php on line 90. in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2018-10-03 16:50:01 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'pricedate/create'
+    'product' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'Ai-bNQIYHSzbCkXfcYi-vVcBWDXQ4ePz7d6WlGgK41tJS_JNT3N5a_ZPLJsmxdH7OVsAYZWQmbmj6fzDO26wCw=='
+    'PriceDate' => [
+        'date_start' => '2018-10-02'
+        'date_end' => '2018-10-12'
+        'price_price_date' => '50000'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    'advanced-backend' => 'n5bce56obfbinla8n1sc5fbf2nhooaav'
+    '_csrf-frontend' => '126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://testzadanie'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://testzadanie/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; advanced-backend=n5bce56obfbinla8n1sc5fbf2nhooaav; _csrf-frontend=126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '15530'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=pricedate%2Fcreate&product=1'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538574601.341
+    'REQUEST_TIME' => 1538574601
+    'argv' => [
+        0 => 'r=pricedate%2Fcreate&product=1'
+    ]
+    'argc' => 1
+]
+2018-10-03 16:51:21 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] yii\web\HeadersAlreadySentException: Headers already sent in C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php on line 90. in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2018-10-03 16:51:21 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'pricedate/create'
+    'product' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'Ai-bNQIYHSzbCkXfcYi-vVcBWDXQ4ePz7d6WlGgK41tJS_JNT3N5a_ZPLJsmxdH7OVsAYZWQmbmj6fzDO26wCw=='
+    'PriceDate' => [
+        'date_start' => '2018-10-02'
+        'date_end' => '2018-10-12'
+        'price_price_date' => '50000'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    'advanced-backend' => 'n5bce56obfbinla8n1sc5fbf2nhooaav'
+    '_csrf-frontend' => '126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://testzadanie'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://testzadanie/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; advanced-backend=n5bce56obfbinla8n1sc5fbf2nhooaav; _csrf-frontend=126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '15533'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=pricedate%2Fcreate&product=1'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538574681.424
+    'REQUEST_TIME' => 1538574681
+    'argv' => [
+        0 => 'r=pricedate%2Fcreate&product=1'
+    ]
+    'argc' => 1
+]
+2018-10-03 16:51:45 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] yii\web\HeadersAlreadySentException: Headers already sent in C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php on line 90. in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2018-10-03 16:51:45 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'pricedate/create'
+    'product' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'Ai-bNQIYHSzbCkXfcYi-vVcBWDXQ4ePz7d6WlGgK41tJS_JNT3N5a_ZPLJsmxdH7OVsAYZWQmbmj6fzDO26wCw=='
+    'PriceDate' => [
+        'date_start' => '2018-10-02'
+        'date_end' => '2018-10-12'
+        'price_price_date' => '50000'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    'advanced-backend' => 'n5bce56obfbinla8n1sc5fbf2nhooaav'
+    '_csrf-frontend' => '126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://testzadanie'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://testzadanie/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; advanced-backend=n5bce56obfbinla8n1sc5fbf2nhooaav; _csrf-frontend=126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '15536'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=pricedate%2Fcreate&product=1'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538574705.33
+    'REQUEST_TIME' => 1538574705
+    'argv' => [
+        0 => 'r=pricedate%2Fcreate&product=1'
+    ]
+    'argc' => 1
+]
+2018-10-03 16:52:43 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] yii\web\HeadersAlreadySentException: Headers already sent in C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php on line 92. in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2018-10-03 16:52:42 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'pricedate/create'
+    'product' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'Ai-bNQIYHSzbCkXfcYi-vVcBWDXQ4ePz7d6WlGgK41tJS_JNT3N5a_ZPLJsmxdH7OVsAYZWQmbmj6fzDO26wCw=='
+    'PriceDate' => [
+        'date_start' => '2018-10-02'
+        'date_end' => '2018-10-12'
+        'price_price_date' => '50000'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    'advanced-backend' => 'n5bce56obfbinla8n1sc5fbf2nhooaav'
+    '_csrf-frontend' => '126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://testzadanie'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://testzadanie/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; advanced-backend=n5bce56obfbinla8n1sc5fbf2nhooaav; _csrf-frontend=126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '15551'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=pricedate%2Fcreate&product=1'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538574762.961
+    'REQUEST_TIME' => 1538574762
+    'argv' => [
+        0 => 'r=pricedate%2Fcreate&product=1'
+    ]
+    'argc' => 1
+]
+2018-10-03 16:52:53 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][error][yii\db\Exception] PDOException: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'date_end' at row 1 in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Command.php:1258
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Command.php(1258): PDOStatement->execute()
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Command.php(1075): yii\db\Command->internalExecute('INSERT INTO `pr...')
+#2 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(549): yii\db\Schema->insert('price_date', Array)
+#4 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(670): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php(92): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\PricedateController->actionCreate()
+#8 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('pricedate/creat...', Array)
+#12 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'date_end' at row 1
+The SQL being executed was: INSERT INTO `price_date` (`date_start`, `date_end`, `price_price_date`, `id_product`) VALUES (1323123123, 3123123123, '50000', 1) in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `pr...')
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Command.php(1075): yii\db\Command->internalExecute('INSERT INTO `pr...')
+#2 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(549): yii\db\Schema->insert('price_date', Array)
+#4 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(670): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php(92): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\PricedateController->actionCreate()
+#8 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('pricedate/creat...', Array)
+#12 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 22003
+    [1] => 1264
+    [2] => Out of range value for column 'date_end' at row 1
+)
+
+2018-10-03 16:52:52 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][info][application] $_GET = [
+    'r' => 'pricedate/create'
+    'product' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'Ai-bNQIYHSzbCkXfcYi-vVcBWDXQ4ePz7d6WlGgK41tJS_JNT3N5a_ZPLJsmxdH7OVsAYZWQmbmj6fzDO26wCw=='
+    'PriceDate' => [
+        'date_start' => '2018-10-02'
+        'date_end' => '2018-10-12'
+        'price_price_date' => '50000'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    'advanced-backend' => 'n5bce56obfbinla8n1sc5fbf2nhooaav'
+    '_csrf-frontend' => '126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://testzadanie'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://testzadanie/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; advanced-backend=n5bce56obfbinla8n1sc5fbf2nhooaav; _csrf-frontend=126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '15551'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=pricedate%2Fcreate&product=1'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538574772.974
+    'REQUEST_TIME' => 1538574772
+    'argv' => [
+        0 => 'r=pricedate%2Fcreate&product=1'
+    ]
+    'argc' => 1
+]
+2018-10-03 16:56:23 [127.0.0.1][1][-][error][yii\web\HeadersAlreadySentException] yii\web\HeadersAlreadySentException: Headers already sent in C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php on line 91. in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Response.php:366
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Response.php(339): yii\web\Response->sendHeaders()
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Response->send()
+#2 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2018-10-03 16:56:23 [127.0.0.1][1][-][info][application] $_GET = [
+    'r' => 'pricedate/create'
+    'product' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => '08PGQPGIURxvO-_LOUzf6sExKZAWuqvlMWBcNqx_BOmYp684vOM1W0J-ho9uAbCsr2txxFPL0a9_VzZh_xtXuQ=='
+    'PriceDate' => [
+        'date_start' => '2018-10-02'
+        'date_end' => '2018-10-13'
+        'price_price_date' => '10002'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    'advanced-backend' => 'n5bce56obfbinla8n1sc5fbf2nhooaav'
+    '_csrf-frontend' => '126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '216'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://testzadanie'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://testzadanie/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; advanced-backend=n5bce56obfbinla8n1sc5fbf2nhooaav; _csrf-frontend=126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '15660'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=pricedate%2Fcreate&product=1'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=1'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538574983.279
+    'REQUEST_TIME' => 1538574983
+    'argv' => [
+        0 => 'r=pricedate%2Fcreate&product=1'
+    ]
+    'argc' => 1
+]
+2018-10-03 16:58:23 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\PriceDate::{delete} in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('{delete}')
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(208): yii\db\BaseActiveRecord->__get('{delete}')
+#2 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(232): yii\helpers\BaseArrayHelper::getValue(Object(common\models\PriceDate), '{delete}')
+#3 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\grid\DataColumn.php(244): yii\grid\DataColumn->getDataCellValue(Object(common\models\PriceDate), 1, 0)
+#4 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\PriceDate), 1, 0)
+#5 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\grid\GridView.php(520): yii\grid\Column->renderDataCell(Object(common\models\PriceDate), 1, 0)
+#6 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\grid\GridView.php(489): yii\grid\GridView->renderTableRow(Object(common\models\PriceDate), 1, 0)
+#7 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\grid\GridView.php(353): yii\grid\GridView->renderTableBody()
+#8 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\grid\GridView.php(321): yii\widgets\BaseListView->renderSection('{items}')
+#10 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\grid\GridView.php(296): yii\widgets\BaseListView->run()
+#14 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#15 C:\OSPanel\domains\testzadanie\advanced\backend\views\pricedate\index.php(23): yii\base\Widget::widget(Array)
+#16 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(336): require('C:\\OSPanel\\doma...')
+#17 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', Array)
+#18 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(backend\controllers\PricedateController))
+#19 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\PricedateController))
+#20 C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php(49): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\PricedateController->actionIndex()
+#22 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#25 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('pricedate/index', Array)
+#26 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#28 {main}
+2018-10-03 16:58:23 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][info][application] $_GET = [
+    'r' => 'pricedate/index'
+    'product' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    'advanced-backend' => 'n5bce56obfbinla8n1sc5fbf2nhooaav'
+    '_csrf-frontend' => '126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; advanced-backend=n5bce56obfbinla8n1sc5fbf2nhooaav; _csrf-frontend=126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '15693'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=pricedate%2Findex&product=1'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=pricedate%2Findex&product=1'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538575103.479
+    'REQUEST_TIME' => 1538575103
+    'argv' => [
+        0 => 'r=pricedate%2Findex&product=1'
+    ]
+    'argc' => 1
+]
+2018-10-03 17:01:44 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'date_end' cannot be null in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Command.php:1258
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Command.php(1258): PDOStatement->execute()
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Command.php(1075): yii\db\Command->internalExecute('INSERT INTO `pr...')
+#2 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(549): yii\db\Schema->insert('price_date', Array)
+#4 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(670): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php(93): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\PricedateController->actionCreate()
+#8 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('pricedate/creat...', Array)
+#12 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'date_end' cannot be null
+The SQL being executed was: INSERT INTO `price_date` (`date_start`, `date_end`, `price_price_date`, `id_product`) VALUES (1451595600, NULL, '8000', 5) in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `pr...')
+#1 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Command.php(1075): yii\db\Command->internalExecute('INSERT INTO `pr...')
+#2 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(549): yii\db\Schema->insert('price_date', Array)
+#4 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(670): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\OSPanel\domains\testzadanie\advanced\backend\controllers\PricedateController.php(93): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\PricedateController->actionCreate()
+#8 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('pricedate/creat...', Array)
+#12 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'date_end' cannot be null
+)
+
+2018-10-03 17:01:44 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][info][application] $_GET = [
+    'r' => 'pricedate/create'
+    'product' => '5'
+]
+
+$_POST = [
+    '_csrf-backend' => 'FCRjgugOF93qH41E06UMsoRpbPpdhuFyGzBoF05ZARFfQAr6pWVzmsda5ACE6GP06jM0rhj3mzhVBwJAHT1SQQ=='
+    'PriceDate' => [
+        'date_start' => '2016-01-01'
+        'date_end' => ''
+        'price_price_date' => '8000'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    'advanced-backend' => 'n5bce56obfbinla8n1sc5fbf2nhooaav'
+    '_csrf-frontend' => '126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '205'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://testzadanie'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://testzadanie/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; advanced-backend=n5bce56obfbinla8n1sc5fbf2nhooaav; _csrf-frontend=126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '15752'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=pricedate%2Fcreate&product=5'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=pricedate%2Fcreate&product=5'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538575304.623
+    'REQUEST_TIME' => 1538575304
+    'argv' => [
+        0 => 'r=pricedate%2Fcreate&product=5'
+    ]
+    'argc' => 1
+]
+2018-10-03 17:20:02 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][error][yii\base\ErrorException:2] yii\base\ErrorException: Invalid argument supplied for foreach() in C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php:577
+Stack trace:
+#0 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(577): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', 'C:\\OSPanel\\doma...', 577, Array)
+#1 C:\OSPanel\domains\testzadanie\advanced\backend\views\optionsshop\_form.php(23): yii\helpers\BaseArrayHelper::map(NULL, 'id', 'name')
+#2 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(336): require('C:\\OSPanel\\doma...')
+#3 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', Array)
+#4 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, NULL)
+#5 C:\OSPanel\domains\testzadanie\advanced\backend\views\optionsshop\update.php(18): yii\base\View->render('_form', Array)
+#6 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(336): require('C:\\OSPanel\\doma...')
+#7 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', Array)
+#8 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(backend\controllers\OptionsshopController))
+#9 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('update', Array, Object(backend\controllers\OptionsshopController))
+#10 C:\OSPanel\domains\testzadanie\advanced\backend\controllers\OptionsshopController.php(94): yii\base\Controller->render('update', Array)
+#11 [internal function]: backend\controllers\OptionsshopController->actionUpdate('1')
+#12 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('update', Array)
+#15 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('optionsshop/upd...', Array)
+#16 C:\OSPanel\domains\testzadanie\advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\OSPanel\domains\testzadanie\advanced\backend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2018-10-03 17:20:02 [127.0.0.1][1][n5bce56obfbinla8n1sc5fbf2nhooaav][info][application] $_GET = [
+    'r' => 'optionsshop/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '0rfephdt875ftt7j92tie656p3'
+    '_identity-backend' => '7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"0BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI\",2592000]\";}'
+    '_csrf-backend' => '39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP\";}'
+    'advanced-backend' => 'n5bce56obfbinla8n1sc5fbf2nhooaav'
+    '_csrf-frontend' => '126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'testzadanie'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://testzadanie/advanced/backend/web/index.php?r=optionsshop%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=0rfephdt875ftt7j92tie656p3; _identity-backend=7604bb2237217bac92cc1d6e40458c44466057d0dbb9ccc6bf613d4035a25ecba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%220BnRvL4CAcOhNo5EFvLth7vACJKZ3fSI%22%2C2592000%5D%22%3B%7D; _csrf-backend=39291ce16b6802eb6979e8db1b643dba6efa899a585c4d803ac3069cb3b47c70a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22KdixMkdG-EiDWMoFnZXTEqzJN7jWSdSP%22%3B%7D; advanced-backend=n5bce56obfbinla8n1sc5fbf2nhooaav; _csrf-frontend=126c8ccbb130e96fbe1345810f80ff6da3ad489f11f482f67c58477bebb25398a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FCO7T3frCGn60fDV3Ai7W1y1Fx01xwQv%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'testzadanie'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/testzadanie'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/testzadanie/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '16049'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=optionsshop%2Fupdate&id=1'
+    'REQUEST_URI' => '/advanced/backend/web/index.php?r=optionsshop%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/advanced/backend/web/index.php'
+    'PHP_SELF' => '/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1538576402.807
+    'REQUEST_TIME' => 1538576402
+    'argv' => [
+        0 => 'r=optionsshop%2Fupdate&id=1'
+    ]
+    'argc' => 1
+]
